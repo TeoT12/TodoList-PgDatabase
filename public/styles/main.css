@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/images/desk.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  position: relative;
+  width: 1000px;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+}
+
+.fbtn {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.today-btn {
+  width: 8em;
+  margin: 1em;
+}
+
+.work-btn {
+  width: 8em;
+  margin: 1em;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  color: white;
+}
+
+.today-btn:hover {
+  background: transparent;
+  backdrop-filter: blur(2px);
+  color: white;
+  transition: 0.5s;
+}
+
+.work-btn:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  color: #0a0a0a;
+}
+
+.date {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 450px;
+  background-color: #7c96ab;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border-radius: 15px 15px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.todo-app {
+  position: absolute;
+  bottom: 25px;
+  height: 500px;
+  width: 400px;
+  border: #fff;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  padding: 15px 15px;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-top: 30px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper {
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.wrapper input {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+
+#input-box::placeholder {
+  color: white;
+}
+
+.wrapper input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.wrapper button {
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 80%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 7px;
+  color: white;
+  top: 10%;
+}
+
+.wrapper button:hover {
+  background: #fff;
+  transition: 0.5s;
+}
+
+#input-box {
+  color: white;
+}
+
+.list {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+
+.task-box {
+  list-style: none;
+  width: 320px;
+  height: 40px;
+  background-color: transparent;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 5px;
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  accent-color: #162938;
+  position: relative;
+  bottom: 5px;
+  left: 10px;
+  margin-right: 10px;
+}
+
+label.task {
+  font-size: 20px;
+  padding: 12px 8px 12px 8px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  color: white;
+}
