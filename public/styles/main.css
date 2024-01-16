@@ -13,21 +13,17 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-section {
+  align-items: center;
+  flex-direction: column;
   position: relative;
-  width: 1000px;
-  height: 630px;
-  display: flex;
-  justify-content: center;
 }
 
 .fbtn {
   position: absolute;
-  left: 0;
-  width: 200px;
-  height: 100px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .today-btn {
@@ -59,7 +55,7 @@ section {
 .date {
   position: absolute;
   text-align: center;
-  top: 20px;
+  top: 90px;
   width: 450px;
   background-color: #7c96ab;
   color: rgb(255, 255, 255);
@@ -76,7 +72,7 @@ section {
 .todo-app {
   position: absolute;
   bottom: 25px;
-  height: 500px;
+  height: 490px;
   width: 400px;
   border: #fff;
   background: transparent;
@@ -187,3 +183,113 @@ footer {
   bottom: 0;
   color: white;
 }
+
+@media (min-width: 319px) and (max-width: 500px) {
+  .today-btn {
+    width: 7em;
+  }
+
+  .work-btn {
+    width: 7em;
+  }
+
+  .date {
+    top: 90px;
+    width: 400px;
+  }
+
+  .todo-app {
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    top: 150px;
+  }
+
+  label.task {
+    font-size: 17px;
+  }
+
+  .task-box {
+    width: 280px;
+    height: 40px;
+  }
+  footer {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  .today-btn {
+    width: 7em;
+  }
+
+  .work-btn {
+    width: 7em;
+  }
+
+  .date {
+    top: 90px;
+    width: 400px;
+  }
+
+  .todo-app {
+    height: 460px;
+    width: 380px;
+    position: absolute;
+    top: 150px;
+  }
+
+  label.task {
+    font-size: 18px;
+  }
+
+  .task-box {
+    width: 280px;
+    height: 40px;
+  }
+  footer {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+  }
+}
+
+ @media ( min-width: 1600px) {
+  .today-btn {
+    width: 10em;
+  }
+
+  .work-btn {
+    width: 10em;
+  }
+
+  .date {
+    position: absolute;
+    top: 90px;
+    width: 500px;
+  }
+
+  .todo-app {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    top: 150px;
+  }
+
+  label.task {
+    font-size: 18px;
+  }
+
+  .task-box {
+    width: 360px;
+    height: 45px;
+  }
+
+  footer {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+  }
+}  
